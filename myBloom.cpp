@@ -14,7 +14,7 @@ myBloom::myBloom(std::string newFilter) : myBloom(newFilter.length()) { strncpy(
 void myBloom::insert(std::string item) { filter[item[0]%length] = 'X'; }
 
 bool myBloom::exists(std::string item) {
-    return filter[item[0]%length]=='X';
+    return filter[item[0]*31%length]=='X';
 }
 //i added a comment
 
