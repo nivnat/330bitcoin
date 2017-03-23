@@ -16,6 +16,8 @@ void myBloom::insert(std::string item) { filter[item[0]%length] = 'X'; }
 bool myBloom::exists(std::string item) {
     return filter[item[0]%length]=='X';
 }
+//i added a comment
+
 
 std::string myBloom::output() { return std::string(filter, length); }
 
