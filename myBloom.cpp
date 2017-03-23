@@ -17,7 +17,7 @@ bool myBloom::exists(std::string item) {
     return filter[item[0]%length]=='X';
 }
 //i added a comment
-
+//for a branch
 
 std::string myBloom::output() { return std::string(filter, length); }
 
